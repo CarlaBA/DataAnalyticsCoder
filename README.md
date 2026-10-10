@@ -25,11 +25,18 @@ La base contiene cuatro tablas principales:
 - `categorias`: clasificación de los productos.
 - `ventas`: registro de las operaciones comerciales.
 
+## Ejecución
+
+1. Abrir SQL Server Management Studio.
+2. Ejecutar el script del Módulo 3 para crear y cargar la base de datos.
+3. Seleccionar la base `Ventas_Tech_DB`.
+4. Ejecutar las consultas de los módulos siguientes.
+
 ## Entregas
 
 ### Módulo 3 - Creación de la base de datos
 
-Archivo: `SQLTP3.sql`
+Archivo: `ventas_tech_db.sql`
 
 Creación de tablas, definición de claves primarias y foráneas, restricciones e inserción de datos de ejemplo.
 
@@ -43,26 +50,17 @@ Consultas para obtener métricas de facturación mensual, productos destacados, 
 
 Archivo: `m5_consultas_joins.sql`
 
-Consultas para combinar información de ventas, clientes, productos y categorías, identificar registros sin ventas y consolidar información mediante `UNION ALL`.
-
-## Ejecución
-
-1. Abrir SQL Server Management Studio.
-2. Ejecutar el script del Módulo 3 para crear y cargar la base de datos.
-3. Seleccionar la base `Ventas_Tech_DB`.
-4. Ejecutar las consultas de los módulos siguientes.
-
 Se desarrollaron cuatro consultas SQL para enriquecer el análisis comercial:
 
--Consulta 1 - INNER JOIN: integración de ventas, clientes, productos y categorías.
+- Consulta 1 - INNER JOIN: integración de ventas, clientes, productos y categorías.
 
--Consulta 2 - LEFT JOIN: identificación de clientes sin compras registradas.
+- Consulta 2 - LEFT JOIN: identificación de clientes sin compras registradas.
 
--Consulta 3 - LEFT JOIN: identificación de productos sin ventas.
+- Consulta 3 - LEFT JOIN: identificación de productos sin ventas.
 
--Consulta 4 - UNION ALL: consolidación de la facturación por zona geográfica, diferenciando Buenos Aires del Interior.
+- Consulta 4 - UNION ALL: consolidación de la facturación por zona geográfica, diferenciando Buenos Aires del Interior.
 
-Principales resultados
+### Principales resultados
 
 Se integraron los 10 registros de ventas con la información descriptiva de las demás tablas.
 
