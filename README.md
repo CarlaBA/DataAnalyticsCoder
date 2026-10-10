@@ -52,3 +52,22 @@ Consultas para combinar información de ventas, clientes, productos y categoría
 3. Seleccionar la base `Ventas_Tech_DB`.
 4. Ejecutar las consultas de los módulos siguientes.
 
+Se desarrollaron cuatro consultas SQL para enriquecer el análisis comercial:
+
+-Consulta 1 - INNER JOIN: integración de ventas, clientes, productos y categorías.
+
+-Consulta 2 - LEFT JOIN: identificación de clientes sin compras registradas.
+
+-Consulta 3 - LEFT JOIN: identificación de productos sin ventas.
+
+-Consulta 4 - UNION ALL: consolidación de la facturación por zona geográfica, diferenciando Buenos Aires del Interior.
+
+Principales resultados
+
+Se integraron los 10 registros de ventas con la información descriptiva de las demás tablas.
+
+No se encontraron clientes ni productos sin ventas registradas.
+
+Buenos Aires registró una facturación de $2.640 (40,97 %) y el Interior de $3.804 (59,03 %).
+
+La facturación total consolidada fue de $6.444.
