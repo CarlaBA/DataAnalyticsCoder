@@ -4,12 +4,17 @@
 
 Proyecto desarrollado durante el curso de Análisis de Datos de Coderhouse.
 
-El objetivo es trabajar con una base de datos de ventas de productos tecnológicos, aplicando SQL para obtener métricas comerciales, analizar el comportamiento de los clientes y generar información útil para la toma de decisiones.
+El proyecto RetailPro tiene como objetivo analizar las ventas de productos tecnológicos, con especial atención a la disminución de las ventas de notebooks durante los últimos dos meses en comparación con las PCs.
+Para ello, se utilizan consultas SQL, transformaciones en Power Query y un modelo analítico en Power BI que permiten obtener métricas comerciales y generar información útil para la toma de decisiones.
+
 
 ## Tecnologías utilizadas
 
 - Microsoft SQL Server.
 - SQL Server Management Studio (SSMS).
+- Power BI Desktop.
+- Power Query para la limpieza y transformación de datos.
+- DAX para la creación de medidas e indicadores.
 - GitHub para el almacenamiento y versionado del proyecto.
 
 Las consultas utilizan sintaxis compatible con SQL Server, como `MONTH()` en lugar de `EXTRACT()` y `TOP` en lugar de `LIMIT`.
@@ -69,3 +74,36 @@ No se encontraron clientes ni productos sin ventas registradas.
 Buenos Aires registró una facturación de $2.640 (40,97 %) y el Interior de $3.804 (59,03 %).
 
 La facturación total consolidada fue de $6.444.
+
+
+### Módulo 6 - Limpieza y transformación de datos
+
+Se realizó un proceso ETL utilizando Power Query en Power BI.
+
+Las principales transformaciones fueron:
+
+- Eliminación de registros duplicados.
+- Tratamiento de valores nulos.
+- Corrección de tipos de datos.
+- Eliminación de filas vacías.
+- Combinación de tablas para enriquecer la información de ventas.
+
+### Módulo 8 - Modelado analítico y DAX
+
+Archivo: `Modulo_8/Aguirre_Carla_Checkpoint2.pbix`
+
+Se desarrolló un modelo de datos en Power BI que incluye:
+
+- Relaciones entre las tablas de clientes, productos, categorías, ventas y fechas.
+- Creación de una tabla calendario `Dim_Fechas`.
+- Creación de una tabla `_Medidas` para organizar los indicadores DAX.
+
+Medidas implementadas:
+
+- Total Ventas.
+- Ventas Online.
+- Ventas YTD.
+- Ventas LY.
+- % Crecimiento Anual.
+
+Se utilizó una matriz de validación para comparar las ventas mensuales entre distintos años.
